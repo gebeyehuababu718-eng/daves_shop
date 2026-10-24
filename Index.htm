@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dave's Shop</title>
+
+    <style>
+        body {
+            background: #101827;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 40px 15px;
+        }
+
+        h1 {
+            color: #00e5ff;
+        }
+
+        .product {
+            background: #1e293b;
+            padding: 25px;
+            margin: 25px auto;
+            max-width: 300px;
+            border-radius: 15px;
+        }
+
+        button {
+            background: #00e5ff;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to Dave's Shop!</h1>
+    <p>Your friendly neighborhood shop.</p>
+
+    <div class="product">
+        <h2>Biscuit</h2>
+        <p>Price: 10 Birr</p>
+        <button onclick="showMessage()">Buy Now</button>
+    </div>
+
+    <p id="message"></p>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").textContent =
+                "Thank you for visiting Dave's Shop!";
+        }
+    </script>
+</body>
+</html>
